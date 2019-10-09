@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roedores Domésticos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body onload="generateTable()">
+    <div id="background-filter">
+        <nav>
+            <div id="logo-header">
+                <img id="logo" src="./assets/logo.png">
+            </div>
+            <ul id="nav-bar">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="especies.html">Especies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Haznos una pregunta</a>            
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <section>
+                <h1>¿POR QUÉ ELEGIR UN ROEDOR COMO MASCOTA?</h1>
+                <div>
+                    <p>
+                        Los roedores son un tipo de mascota especialmente populares entre las familias con niños, 
+                        ya que son unos animales que requieren relativos pocos cuidados pero, a su vez, permiten 
+                        a los más pequeños encargarse de su primera mascota con un poco de autonomía durante la 
+                        vida de estos animalitos. Te recomendamos cuándo y cómo tener uno, qué cuidados deben
+                        tener y cómo mejorar tu relación con ellos.
+                    </p>
+                </div>                
+            </section>
+            <section id="right-section">                
+                <h1>CARACTERISTICAS DE LOS ROEDORES</h1>
+                <div>
+                    <p>
+                        Los roedores son una clase de mamíferos que se caracterizan por su dentadura: tienen cuatro grandes incisivos, 
+                        dos en la envía superior y dos en la inferior, que nunca dejan de crecer. Por esto, es necesario que estén royendo 
+                        continuamente, para desgastarlos y mantenerse sanos.
+                    </p>
+                    <p>
+                        Hay roedores de muchos tamaños diferentes: los más pequeños del mundo son los jerbos pigmeos, que pesan apenas 3 gramos. 
+                        Los más grandes, en cambio, son las capibaras, también conocidas como carpinchos: pueden llegar a pesar 35 kilogramos y 
+                        tener el tamaño aproximado de un perro pastor alemán.
+                    </p>
+                    <p>
+                        Los roedores que pueden ser mascotas no se van a estos extremos; estos dos ejemplos son animales salvajes que son muy 
+                        difíciles de cuidar en cautividad. En una consulta veterinaria, los roedores domésticos se tratan como animales exóticos,
+                        pero están adaptados a vivir en nuestras casas.
+                    </p>
+                    <p>
+                        Esta clase de animales son herbívoros, es decir, solo se alimentan de frutas y verduras; en algún caso, como los hámsters o 
+                        los jerbos, además pueden consumir semillas, frutos secos y algunos tipos de insectos.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h1>¿CUÁL ES EL ROEDOR IDEAL PARA MI?</h1>
+                <div>
+                    <p>A la hora de elegir un animalito para incorporar a la familia hay varias cuestiones que debemos considerar.
+                        El espacio que necesitan, su esperanza de vida y la atención que requieren son unas de estas. Te dejamos esta
+                        tabla para que puedas guiarte a la hora de elegir. Para conocer información mas detallada dirigite a la pestaña de especies.
+                    </p>            
+                    <table id="speciesTable-js">                        
+                    </table>
+                </div>
+                <div id="addSpeciesFormDiv">
+                    <h2>Agregá una nueva especie</h2>
+                    <form id="addForm-js">
+                        <label for="especie">Especie:</label>
+                        <input type="text" name="especie" required autofocus>
+                        <label for="longevidad">Longevidad:</label>
+                        <input type="text" name="longevidad" required>
+                        <label for="dificultad">Dificultad:</label>
+                        <input name="dificultad" ></input>                        
+                    </form>                
+                    <div id="buttonsDiv">    
+                        <button id="clear-button" type="submit">Borrar</button>
+                        <button id="add-button" type="submit">Agregar</button>
+                        <button id="add-3-button">Agregar de a 3</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <h3>Encontranos en las redes sociales</h3>
+            <div class="social-media">
+                <i class="fab fa-instagram"></i>
+                <p>@roedoresdomesticos</p>
+            </div>
+            <div class="social-media">
+                <i class="fab fa-facebook-square"></i>
+                <p>Roedores Domesticos</p>
+            </div>
+            <div class="social-media">
+                <i class="fab fa-twitter-square"></i>
+                <p>@roedoresdomesticos</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
